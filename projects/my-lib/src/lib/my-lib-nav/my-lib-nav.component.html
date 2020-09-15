@@ -1,0 +1,7 @@
+<nav class="navigation">
+  <ul class="list" [fxLayout.lt-sm]="'column'" [fxLayout.gt-xs]="'row'">
+    <li class="item" (click)="onClick()" *ngFor="let item of items$ | async; trackBy: trackById">
+      <a class="link" [routerLink]="item.router">{{ item.title }}</a>
+    </li>
+  </ul>
+</nav>

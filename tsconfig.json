@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@vd/my-lib": [
+        "dist/my-lib"
+      ],
+      "@vd/my-lib/*": [
+        "dist/my-lib/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
